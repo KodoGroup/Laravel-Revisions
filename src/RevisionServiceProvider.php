@@ -18,8 +18,6 @@ class RevisionServiceProvider extends ServiceProvider
         ], 'revision');
 
         $this->loadMigrationsFrom(__DIR__.'/../migrations');
-
-        //dd(get_class($this->app['events']));
     }
 
     /**

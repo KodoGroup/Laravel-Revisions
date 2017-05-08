@@ -11,14 +11,14 @@
         "phpunit/phpunit": "^6.1"
     },
     "autoload": {
-    	"psr-4": {
-    		"Kodo\\Revisions\\": "src/"
-    	}
+        "psr-4": {
+            "Kodo\\Revisions\\": "src/"
+        }
     },
     "autoload-dev": {
-    	"psr-4": {
-    		"Kodo\\Revisions\\Tests\\": "tests/"
-    	},
+        "psr-4": {
+            "Kodo\\Revisions\\Tests\\": "tests/"
+        },
         "files": [
             "tests/helpers.php"
         ]
