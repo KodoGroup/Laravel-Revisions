@@ -6,17 +6,17 @@ use Kodo\Revisions\Revision;
 
 trait Revisionable
 {
-	/**
-	 * Boots the Revivision trait
-	 * @return void
-	 */
+    /**
+     * Boots the Revivision trait
+     * @return void
+     */
     public static function bootRevisionable()
     {
         static::updating(function ($model) {
             $model->revisions()->create([
-            	'user_id' => function_exists('auth') && auth()->check() ? auth()->user()->id : null,
-            	'before'  => array_intersect_key($model->fresh()->toArray(), $model->getDirty()),
-            	'after'   => $model->getDirty(),
+                'user_id' => function_exists('auth') && auth()->check() ? auth()->user()->id : null,
+                'before'  => array_intersect_key($model->fresh()->toArray(), $model->getDirty()),
+                'after'   => $model->getDirty(),
             ]);
         });
     }
