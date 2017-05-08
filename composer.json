@@ -1,0 +1,26 @@
+{
+    "name": "kodo/laravel-revisions",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "illuminate/database": "^5.4",
+        "illuminate/support": "^5.4",
+        "illuminate/events": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Kodo\\Revisions\\": "src/"
+    	}
+    },
+    "autoload-dev": {
+    	"psr-4": {
+    		"Kodo\\Revisions\\Tests\\": "tests/"
+    	},
+        "files": [
+            "tests/helpers.php"
+        ]
+    }
+}
