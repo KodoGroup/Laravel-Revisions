@@ -30,8 +30,8 @@ class RevisionTest extends TestCase
             $table->increments('id');
             $table->integer('user_id')->unsigned()->nullable();
             $table->nullableMorphs('revisionable');
-            $table->json('before')->nullable();
-            $table->json('after')->nullable();
+            $table->string('before', 5000)->nullable();
+            $table->string('after', 5000)->nullable();
             $table->timestamps();
         });
 
