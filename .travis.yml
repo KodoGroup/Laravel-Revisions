@@ -2,5 +2,8 @@ language: php
 
 php:
    - 7.1
+   
+install:
+   - travis_retry composer update --no-interaction --no-ansi --no-progress --no-suggest --optimize-autoloader --prefer-stable
 
 script: vendor/bin/phpunit
