@@ -1,8 +1,8 @@
 <?php
 
-namespace Kodo\Revisions;
+namespace Ruth\Revisions;
 
-use Kodo\Revisions\Revision;
+use Ruth\Revisions\Revision;
 
 trait Revisionable
 {

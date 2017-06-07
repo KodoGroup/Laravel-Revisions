@@ -1,6 +1,6 @@
 <?php
 
-namespace Kodo\Revisions;
+namespace Ruth\Revisions;
 
 use Illuminate\Support\ServiceProvider;
 

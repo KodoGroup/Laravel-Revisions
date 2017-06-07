@@ -1,11 +1,11 @@
 <?php
 
-namespace Kodo\Revisions\Tests;
+namespace Ruth\Revisions\Tests;
 
 use Illuminate\Database\Capsule\Manager;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
-use Kodo\Revisions\Revisionable;
+use Ruth\Revisions\Revisionable;
 use PHPUnit\Framework\TestCase;
 
 class RevisionTest extends TestCase

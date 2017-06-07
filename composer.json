@@ -1,5 +1,5 @@
 {
-    "name": "kodo/laravel-revisions",
+    "name": "stefanoruth/laravel-revisions",
     "type": "library",
     "license": "MIT",
     "require": {
@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kodo\\Revisions\\": "src/"
+            "Ruth\\Revisions\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kodo\\Revisions\\Tests\\": "tests/"
+            "Ruth\\Revisions\\Tests\\": "tests/"
         },
         "files": [
             "tests/helpers.php"
