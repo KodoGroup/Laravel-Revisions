@@ -15,9 +15,9 @@ class CreateRevisionsTable extends Migration
         Schema::create(config('revision.table'), function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->nullable();
-            $table->nullableMorphs('revisionable');
-            $table->string('before', 5000)->nullable();
-            $table->string('after', 5000)->nullable();
+            $table->morphs('revisionable');
+            $table->json('before')->nullable();
+            $table->json('after')->nullable();
             $table->timestamps();
         });
     }
